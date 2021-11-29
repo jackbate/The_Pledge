@@ -1,0 +1,95 @@
+.flip-card {
+    width: 85vw;
+    height: 46vh;
+    border: 3px $tertiary solid;
+    background-color: $secondary;
+    text-align: center;
+    border-radius: 15px;
+    border-color: $secondary;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    perspective: 1000px;
+    @media (min-width:400px){
+        height: 44vh;
+    }
+    @media (min-width:600px){
+        height: 40vh;
+    }
+    @media (min-width:700px){
+        height: 43vh;
+    }
+    @media (min-width:768px){
+        width: 40vw;
+        height: 35vh;
+    }
+    @media (min-width:998px){
+        width: 34vw;
+    }
+    @media (min-width:1208px){
+        width: 340px;
+        height: 45vh;
+    }
+    @media (min-width:1400px){
+        height: 40vh;
+    }
+    @media (min-height:1360px){
+        height: 27vh;
+    }
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+position: relative;
+width: 100%;
+height: 100%;
+text-align: center;
+transition: transform 0.8s;
+transform-style: preserve-3d;
+}
+
+/* Do a horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner  {
+transform: rotateY(180deg);
+}
+
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+position: absolute;
+width: 100%;
+height: 100%;
+-webkit-backface-visibility: hidden; /* Safari */
+backface-visibility: hidden;
+border-radius: 15px;
+padding: 5px;
+h3{
+    margin-bottom: 14px;
+}
+p{
+    font-size: 13px;
+    line-height: 1.2;
+}
+
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+background-color: $secondary;
+color: $darkestblue;
+}
+
+/* Style the back side */
+.flip-card-back {
+background-color: $secondary;
+color: $darkestblue;
+transform: rotateY(180deg);
+display: flex;
+flex-direction: column;
+align-items: center;
+h3{
+    font-size: 15px;
+    border-bottom: 2px $primary solid;
+    width: 50%;
+}
+}

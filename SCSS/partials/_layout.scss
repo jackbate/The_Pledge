@@ -1,0 +1,17 @@
+.puzzle_container{
+    width: 84.743%;
+    height: 100%;
+    margin: auto;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 4px solid white;
+    background: url(/Assets/Videos/cover_image.png);
+    background-size: 1520px 916px;
+    border-radius: 4px;
+}
+
+body{
+    background-color: #004e9b;
+}

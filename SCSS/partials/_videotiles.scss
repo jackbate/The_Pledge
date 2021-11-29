@@ -1,0 +1,77 @@
+.tile{
+    width: 226.5px;
+    height: 400px;
+    border: 2px solid white;
+    overflow: hidden;
+    border-radius: 3px;
+    // &1{
+    //     background-color: black;
+    // }
+    // &2{
+    //     background-color: blanchedalmond;
+    // }
+    // &3{
+    //     background-color: blue;
+    // }
+    // &4{
+    //     background-color: brown;
+    // }
+    // &5{
+    //     background-color: burlywood;
+    // }
+    // &6{
+    //     background-color: cadetblue;
+    // }
+    // &7{
+    //     background-color: chartreuse;
+    // }
+    // &8{
+    //     background-color: chocolate;
+    // }
+    // &9{
+    //     background-color: cornsilk;
+    // }
+    // &10{
+    //     background-color: crimson;
+    // }
+    // &11{
+    //     background-color: darkgoldenrod;
+    // }
+    // &12{
+    //     background-color: darkkhaki;
+    // }
+    // &13{
+    //     background-color: darkmagenta;
+    // }
+    // &14{
+    //     background-color: darkorchid;
+    // }
+    // &15{
+    //     background-color: darksalmon;
+    // }
+    // &16{
+    //     background-color: darkslategray;
+    // }
+    // &17{
+    //     background-color: deeppink;
+    // }
+    // &18{
+    //     background-color: deepskyblue;
+    // }
+    // &19{
+    //     background-color: firebrick;
+    // }
+    // &20{
+    //     background-color: fuchsia;
+    // }
+}
+
+.thevideo {
+    height: 400px;
+  }
+
+  /* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+    display:none !important;
+}
+

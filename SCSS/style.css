@@ -1,0 +1,239 @@
+.flip-card {
+  width: 85vw;
+  height: 46vh;
+  border: 3px white solid;
+  background-color: grey;
+  text-align: center;
+  border-radius: 15px;
+  border-color: grey;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+@media (min-width: 400px) {
+  .flip-card {
+    height: 44vh;
+  }
+}
+
+@media (min-width: 600px) {
+  .flip-card {
+    height: 40vh;
+  }
+}
+
+@media (min-width: 700px) {
+  .flip-card {
+    height: 43vh;
+  }
+}
+
+@media (min-width: 768px) {
+  .flip-card {
+    width: 40vw;
+    height: 35vh;
+  }
+}
+
+@media (min-width: 998px) {
+  .flip-card {
+    width: 34vw;
+  }
+}
+
+@media (min-width: 1208px) {
+  .flip-card {
+    width: 340px;
+    height: 45vh;
+  }
+}
+
+@media (min-width: 1400px) {
+  .flip-card {
+    height: 40vh;
+  }
+}
+
+@media (min-height: 1360px) {
+  .flip-card {
+    height: 27vh;
+  }
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  -webkit-transition: -webkit-transform 0.8s;
+  transition: -webkit-transform 0.8s;
+  transition: transform 0.8s;
+  transition: transform 0.8s, -webkit-transform 0.8s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+/* Do a horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  /* Safari */
+  backface-visibility: hidden;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.flip-card-front h3, .flip-card-back h3 {
+  margin-bottom: 14px;
+}
+
+.flip-card-front p, .flip-card-back p {
+  font-size: 13px;
+  line-height: 1.2;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: grey;
+  color: blue;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: grey;
+  color: blue;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.flip-card-back h3 {
+  font-size: 15px;
+  border-bottom: 2px black solid;
+  width: 50%;
+}
+
+.jigsaw1, .jigsaw2 {
+  position: relative;
+  cursor: pointer;
+}
+
+.jigsaw1,
+.jigsaw1 span {
+  background-color: none;
+}
+
+.jigsaw2,
+.jigsaw2 span {
+  background-color: none;
+}
+
+.text {
+  display: block;
+  color: #fff;
+  font-size: 1.2em;
+  text-align: center;
+  position: relative;
+  background: transparent !important;
+}
+
+.jigsaw1 .t, .jigsaw2 .t {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: -1.5em;
+  left: 2em;
+  border-radius: 4em;
+}
+
+.jigsaw1 .r, .jigsaw2 .r {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 2em;
+  left: 5.5em;
+  border-radius: 4em;
+}
+
+.jigsaw1 .b, .jigsaw2 .b {
+  width: 1.8em;
+  height: 1.8em;
+  position: absolute;
+  top: 4.5em;
+  left: 2.2em;
+  border-radius: 4em;
+  background-color: #fff;
+}
+
+.jigsaw1 .l, .jigsaw2 .l {
+  width: 1.8em;
+  height: 1.8em;
+  position: absolute;
+  top: 2.2em;
+  left: -.4em;
+  border-radius: 4em;
+  background-color: #fff;
+}
+
+.tile {
+  width: 226.5px;
+  height: 400px;
+  border: 2px solid white;
+  overflow: hidden;
+  border-radius: 3px;
+}
+
+.thevideo {
+  height: 400px;
+}
+
+/* Hide Play button + controls on iOS */
+video::-webkit-media-controls {
+  display: none !important;
+}
+
+.puzzle_container {
+  width: 84.743%;
+  height: 100%;
+  margin: auto;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border: 4px solid white;
+  background: url(/Assets/Videos/cover_image.png);
+  background-size: 1520px 916px;
+  border-radius: 4px;
+}
+
+body {
+  background-color: #004e9b;
+}
+/*# sourceMappingURL=style.css.map */
