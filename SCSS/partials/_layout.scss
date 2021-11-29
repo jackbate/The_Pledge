@@ -7,10 +7,17 @@
     flex-direction: row;
     flex-wrap: wrap;
     border: 4px solid white;
-    background: url(../../Assets/Videos/cover_image.png);
-    background-size: 1520px 916px;
+    background: url('../../Assets/cover_image.jpeg');
+    background-size: 1620px 916px;
     border-radius: 4px;
 }
+
+// .image{
+//     width: 1612px;
+//     height: 810px;
+//     position: absolute;
+//     z-index: -1;
+// }
 
 body{
     background-color: #004e9b;
